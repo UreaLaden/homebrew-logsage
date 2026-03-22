@@ -5,21 +5,21 @@
 class Logsage < Formula
   desc "AI-powered log analysis CLI that identifies root causes of system failures"
   homepage "https://github.com/UreaLaden/log-sage"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/UreaLaden/log-sage/releases/download/v1.1.0/logsage_1.1.0_darwin_amd64.tar.gz"
-      sha256 "4fea62b069b3a23fd94cccc3be01bcfdbec3dc71ea77da2403b96601e7b378ba"
+      url "https://github.com/UreaLaden/log-sage/releases/download/v1.1.1/logsage_1.1.1_darwin_amd64.tar.gz"
+      sha256 "4afe4ae8766574a9564664e5bf0d32c5c2f7f2a0f808e0a5766234eed36c8087"
 
       define_method(:install) do
         bin.install "logsage"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/UreaLaden/log-sage/releases/download/v1.1.0/logsage_1.1.0_darwin_arm64.tar.gz"
-      sha256 "6e5215c94622d57843a0539d95b63e1823d23f2ff8bffb6d5ef8d8cfc649e44c"
+      url "https://github.com/UreaLaden/log-sage/releases/download/v1.1.1/logsage_1.1.1_darwin_arm64.tar.gz"
+      sha256 "0c0de1c1156da31bd6f6f34bd5fdfe3b024d1fe02e1ff9c6f7ff864f1dcc53e1"
 
       define_method(:install) do
         bin.install "logsage"
@@ -29,15 +29,15 @@ class Logsage < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/UreaLaden/log-sage/releases/download/v1.1.0/logsage_1.1.0_linux_amd64.tar.gz"
-      sha256 "cb10bc6d42eb7d6feae970a3f3cfcf41c55ce9cd7926d694d268d4da57f9e181"
+      url "https://github.com/UreaLaden/log-sage/releases/download/v1.1.1/logsage_1.1.1_linux_amd64.tar.gz"
+      sha256 "36f3751546eb2586c3d9db4529458a182042378c46daf659e5d4ca810d69b5c4"
       define_method(:install) do
         bin.install "logsage"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/UreaLaden/log-sage/releases/download/v1.1.0/logsage_1.1.0_linux_arm64.tar.gz"
-      sha256 "2bae3c457cbc6499f2f9b6f6550c1a5ff0ba7e76425853f855618a06d2c2038d"
+      url "https://github.com/UreaLaden/log-sage/releases/download/v1.1.1/logsage_1.1.1_linux_arm64.tar.gz"
+      sha256 "d45294aebf424a4d8f22e4aa0090eb0f95df60e3b81a0b93ad3b5dff75c07779"
       define_method(:install) do
         bin.install "logsage"
       end
